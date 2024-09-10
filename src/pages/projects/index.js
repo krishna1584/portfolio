@@ -19,29 +19,30 @@ function Projects() {
       <PageTitle
         title="projects"
         stretchedLetter="r"
-        overlayTitle="Contributions | Freelances"
+        overlayTitle="Contributions | Projects"
       />
 
       <ProjectsMain>
-        <ProjectWrapper onClick={() => window.open("https://dribbble.com/shots/22022766-Marketplace", "_blank")}>
+        <ProjectWrapper onClick={() => window.open("https://tradex1.vercel.app/", "_blank")}>
           <ThumbnailWrapper>
             <AppDetails>
               <DateContainer>
                 <div className="line"></div>
-                <span>APRIL, 2023</span>
+                <span>SEPTEMBER, 2024</span>
                 <div className="line"></div>
               </DateContainer>
-              <h1>COINZZ</h1>
-              <h2>Marketplace with integrated checkout customization.</h2>
+              <h1>TradeX</h1>
+              <h2>Dive into the sea of Indian Stock Market with real time analysis.</h2>
             </AppDetails>
             <Thumbnail
-              src="/static/projects/coinzz.png"
+              src="/static/projects/tradex.png"
               className="thumb"
             />
           </ThumbnailWrapper>
         </ProjectWrapper>
 
-        <ProjectWrapper onClick={() => window.open("https://n-project-pi.vercel.app", "_blank")}>
+
+        <ProjectWrapper onClick={() => window.open("https://isro-website1.netlify.app/", "_blank")}>
           <ThumbnailWrapper>
             <AppDetails>
               <DateContainer>
@@ -49,65 +50,48 @@ function Projects() {
                 <span>MAY, 2023</span>
                 <div className="line"></div>
               </DateContainer>
-              <h1>N Soluções</h1>
-              <h2>Landing page for a tech company.</h2>
+              <h1>ISRO WEB</h1>
+              <h2>A modified website for ISRO.</h2>
             </AppDetails>
             <Thumbnail
-              src="/static/projects/nproject.gif"
+              src="/static/projects/isro.png"
               className="thumb"
             />
           </ThumbnailWrapper>
         </ProjectWrapper>
 
-        <ProjectWrapper onClick={() => window.open("https://www.soujunior.tech", "_blank")}>
+
+        <ProjectWrapper onClick={() => window.open("https://tourify1.netlify.app/", "_blank")}>
           <ThumbnailWrapper>
             <AppDetails>
               <DateContainer>
                 <div className="line"></div>
-                <span>JULY, 2023</span>
+                <span>MARCH, 2024</span>
                 <div className="line"></div>
               </DateContainer>
-              <h1>SouJunior</h1>
-              <h2>I've contributed to a Linkedin like plataform.</h2>
+              <h1>Tourify</h1>
+              <h2>Indian Tourism Website.</h2>
             </AppDetails>
             <Thumbnail
-              src="/static/projects/soujunior.jpeg"
+              src="/static/projects/tourify.png"
               className="thumb"
             />
           </ThumbnailWrapper>
         </ProjectWrapper>
 
-        <ProjectWrapper onClick={() => window.open("https://cartuchosonline.netlify.app", "_blank")}>
+        <ProjectWrapper onClick={() => window.open("https://hangman-game-nine-tan.vercel.app/", "_blank")}>
           <ThumbnailWrapper>
             <AppDetails>
               <DateContainer>
                 <div className="line"></div>
-                <span>NOVEMBER, 2022</span>
+                <span>DECEMBER, 2023</span>
                 <div className="line"></div>
               </DateContainer>
-              <h1>CARTUCHOS ONLINE</h1>
-              <h2>Landing page.</h2>
+              <h1>Hangman Game</h1>
+              <h2>A word guessing game.</h2>
             </AppDetails>
             <Thumbnail
-              src="/static/projects/cartuchos.jpeg"
-              className="thumb"
-            />
-          </ThumbnailWrapper>
-        </ProjectWrapper>
-
-        <ProjectWrapper onClick={() => window.open("https://app.logzz.com.br", "_blank")}>
-          <ThumbnailWrapper>
-            <AppDetails>
-              <DateContainer>
-                <div className="line"></div>
-                <span>FEBRUARY, 2023</span>
-                <div className="line"></div>
-              </DateContainer>
-              <h1>LOGZZ</h1>
-              <h2>Login Screen Design and Another Contributions.</h2>
-            </AppDetails>
-            <Thumbnail
-              src="/static/projects/logzz.jpeg"
+              src="/static/projects/hangman.png"
               className="thumb"
             />
           </ThumbnailWrapper>
