@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import { Container, Map, ContactInfo } from "./styles";
@@ -25,52 +25,54 @@ function MapComp() {
       transition={{ duration: 1, delay: 0.7 }}
     >
       {title === "light-theme" ? (
-        <Map center={[-19.740235, -47.894058]} zoom={15} zoomControl={false}>
+        <Map center={[30.7333, 76.7794]} zoom={15} zoomControl={false}>
           <ContactInfo>
             <div>
-              <p>Krishna</p>
-              <p>Chandigarh</p>
+              <p>Krishna Yadav,</p>
+              <p>Chandigarh, India</p>
             </div>
             <div>
               <span>
-                <AiFillPhone />
+                <AiFillPhone /> +91 1234567899
               </span>
               <span>
-                <MdEmail className="email" />
+                <MdEmail className="email" /> abhi19ay@gmail.com
               </span>
             </div>
           </ContactInfo>
           <TileLayer
-            
+            url={`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`}
           />
-          <Marker icon={MarkerIcon} position={[-19.740235, -47.894058]}>
+          <Marker icon={MarkerIcon} position={[30.7333, 76.7794]}>
             <Popup>
-              ME ^^ <br />
+              Krishna Yadav <br />
+              Chandigarh, India
             </Popup>
           </Marker>
         </Map>
       ) : (
-        <Map center={[-19.740235, -47.894058]} zoom={15} zoomControl={false}>
+        <Map center={[30.7333, 76.7794]} zoom={15} zoomControl={false}>
           <ContactInfo>
             <div>
-              <p>Krishna</p>
-              <p></p>
+              <p>Krishna Yadav,</p>
+              <p>Chandigarh, India</p>
             </div>
             <div>
               <span>
-                <AiFillPhone />
+                <AiFillPhone /> +91 1234567899
               </span>
               <span>
-                <MdEmail className="email" />
+                <MdEmail className="email" /> abhi19ay@gmail.com
               </span>
             </div>
           </ContactInfo>
           <TileLayer
-            url={`https://api.mapbox.com/styles/v1/twilightmoon/cl91fs2vr00eh15mv8bfayex7/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoidHdpbGlnaHRtb29uIiwiYSI6ImNsOTFmcWpjZjFhMTEzeG5uMWl5MXl5MWgifQ.D8WHcu-sz_JmbKyFBOCYAw`}
+            url={`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`}
           />
-          <Marker icon={MarkerIcon} position={[-19.740235, -47.894058]}>
+          <Marker icon={MarkerIcon} position={[30.7333, 76.7794]}>
             <Popup>
-              ME ^^ <br />
+              Krishna Yadav <br />
+              Chandigarh, India
             </Popup>
           </Marker>
         </Map>

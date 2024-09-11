@@ -1,4 +1,4 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "",
+  siteUrl: process.env.SITE_URL || "https://krishna-yadav.vercel.app/",
 };

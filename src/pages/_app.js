@@ -106,7 +106,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Moon Coded</title>
+        <title>Krishna Yadav</title>
       </Head>
       <Lines image={lines} />
       {theme === dark ? (

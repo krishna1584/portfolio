@@ -24,25 +24,11 @@ function Contact() {
   );
 
   const sendEmail = (e) => {
-    emailjs
-      .sendForm(
-        "service_sd8uatp",
-        "template_9bkroze",
-        e.target,
-        "M-ZEoRP3zha0buhUy"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-    e.preventDefault();
+    e.preventDefault(); // Prevent form submission
+    alert("Form is currently disabled and non-functional.");
+    e.target.reset();   // Optionally reset the form
   };
-
+  
   return (
     <Container>
       <Head>

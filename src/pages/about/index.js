@@ -24,65 +24,15 @@ import {
   TechP
 } from "../../styles/pages/About";
 import { motion } from "framer-motion";
-import {IoLogoJavascript, IoLogoReact, IoLogoPython, IoLogoFigma, } from "react-icons/io"
-import {FaReact, FaFigma, FaNodeJs} from "react-icons/fa"
+import { IoLogoPython, IoLogoJavascript } from "react-icons/io";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { SiCplusplus, SiC, SiMongodb, SiMysql } from "react-icons/si";
 import { BsFileText, BsFillFileTextFill } from "react-icons/bs";
-import {SiTypescript} from "react-icons/si"
 import { useRouter } from "next/router";
 
 function About() {
-  const router = useRouter()
+  const router = useRouter();
 
-  const data = {
-    cardOne: {
-      title: "Frameworks",
-
-      first: {
-        alt: "ReactJS",
-        icon: "reacticon.png",
-      },
-      second: {
-        alt: "NextJS",
-        icon: "nextjs.png",
-      },
-      third: {
-        alt: "Bootstrap",
-        icon: "bootstrap.png",
-      },
-    },
-    cardTwo: {
-      title: "Languages",
-
-      first: {
-        alt: "JavaScript",
-        icon: "javascript.png",
-      },
-      second: {
-        alt: "Python",
-        icon: "python.png",
-      },
-      third: {
-        alt: "Sass",
-        icon: "sass.png",
-      },
-    },
-    cardThree: {
-      title: "Tools",
-
-      first: {
-        alt: "Linux",
-        icon: "linux.png",
-      },
-      second: {
-        alt: "NodeJS",
-        icon: "node.png",
-      },
-      third: {
-        alt: "Mongo Database",
-        icon: "mongodb.svg",
-      },
-    },
-  };
   return (
     <Container>
       <Head>
@@ -102,19 +52,15 @@ function About() {
               I'm <span>Krishna</span>
             </NameTitle>
             <AboutMeTitle>
-              A <span className="colored">Frontend</span> Developer.
+              A <span className="colored">Full-Stack</span> Developer.
             </AboutMeTitle>
             <AboutMeParagraph>
-            I am a Frontend Developer and a content creator passionate about crafting intuitive and responsive web solutions. 
-            I specialize in creating seamless user interfaces and building efficient, scalable back-end systems. By combining my skills in
-             front-end technologies like React and back-end development with databases like MySQL and MongoDB, I deliver websites that are
-              both visually appealing and highly functional. My focus is on performance, user experience, and ensuring that every
-               project meets the highest standards of usability and design.
+              I am a Full-Stack Developer passionate about building efficient and scalable web applications.
+              My expertise lies in front-end development using React and back-end systems with technologies like 
+              MySQL and MongoDB. I also have strong proficiency in C++, C, Python, and JavaScript, ensuring well-rounded 
+              skills in both system-level programming and web development. My focus is on performance, user experience, 
+              and crafting solutions that meet the highest standards.
             </AboutMeParagraph>
-            {/* <ResumeTitle>
-              <BsFileText size={30} />
-              <h4>Past Experience</h4>
-            </ResumeTitle> */}
             <ExperienceContainer>
               <div className="line"></div>
               <span>Past Experiences</span>
@@ -133,15 +79,14 @@ function About() {
               My <span>SERVICES</span>
             </NameTitle>
             <AboutMeTitle>
-              Empowering <span className="colored">Success</span> through Efficient Collaboration: Leveraging the
-              Right Tools and Structured Processes
+              Delivering <span className="colored">Impactful Solutions</span> through Innovation and Collaboration
             </AboutMeTitle>
           </TitleContainer>
           <ServicesParagraph>
-            As a content creator, I have made valuable contributions to various projects, leveraging my creativity and expertise to enhance their success.
-            My diverse experience allows me to tackle unique challenges across different niches, adapting to the specific needs of each audience.
-            If you're looking for a <span className="colored">dedicated professional</span> passionate about delivering impactful content, I'm here to help.
-            <span className="colored">Get in touch</span> to discuss how I can contribute to the success of your next project."
+            With my diverse skill set, I offer development services in areas such as web and systems programming.
+            I can build efficient full-stack web applications and provide back-end support using databases like MySQL and MongoDB. 
+            My experience in C++, C, Python, and JavaScript also enables me to contribute to systems-level projects and algorithmic solutions.
+            <span className="colored">Get in touch</span> to discuss how I can contribute to your next project.
           </ServicesParagraph>
           <ExperienceContainer>
               <div className="line"></div>
@@ -149,28 +94,32 @@ function About() {
             </ExperienceContainer>
           <TechsContainer>
             <TechP>
-              <IoLogoJavascript />
-              <span>Javascript ES6+</span>
+              <SiCplusplus />
+              <span>C++</span>
             </TechP>
             <TechP>
-              <FaReact />
-              <span>React.Js</span>
-            </TechP>
-            <TechP>
-              <FaFigma />
-              <span>Figma</span>
+              <SiC />
+              <span>C</span>
             </TechP>
             <TechP>
               <IoLogoPython />
               <span>Python</span>
             </TechP>
             <TechP>
-              <SiTypescript />
-              <span>Typscript</span>
+              <IoLogoJavascript />
+              <span>JavaScript</span>
             </TechP>
             <TechP>
-              <FaNodeJs />
-              <span>Node.Js</span>
+              <FaReact />
+              <span>React.Js</span>
+            </TechP>
+            <TechP>
+              <SiMongodb />
+              <span>MongoDB</span>
+            </TechP>
+            <TechP>
+              <SiMysql />
+              <span>MySQL</span>
             </TechP>
           </TechsContainer>
         </SecundaryColumn>
